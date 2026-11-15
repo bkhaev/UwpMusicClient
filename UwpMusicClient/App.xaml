@@ -1,0 +1,15 @@
+﻿<Application
+    x:Class="UwpMusicClient.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpMusicClient">
+    <Application.Resources>
+        <CornerRadius x:Key="GridViewItemCornerRadius">5</CornerRadius>
+        <BitmapImage x:Key="DefaultImage" UriSource="/images/music_icon.png" />
+        <Style TargetType="TextBlock" x:Key="HeadText">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0 20 0 0"/>
+        </Style>
+    </Application.Resources>
+</Application>

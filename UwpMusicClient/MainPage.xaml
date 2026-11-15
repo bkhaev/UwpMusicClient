@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="UwpMusicClient.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UwpMusicClient"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <RelativePanel>
+        <TextBlock Text="Powered by [скрыто]" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="50" MaxWidth="150" Opacity="0.5" TextWrapping="WrapWholeWords" HorizontalTextAlignment="Center"/>
+        <StackPanel Width="150px" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Background="White">
+            <TextBlock Text="UwpMusicClient" HorizontalAlignment="Center"/>
+            <TextBlock Text="Авторизация" HorizontalAlignment="Center"/>
+            <StackPanel Margin="0 0 0 5">
+                <TextBlock Text="Логин:"/>
+                <TextBox x:Name="emailTb"/>
+                <TextBlock Text="Пароль:"/>
+                <PasswordBox x:Name="passTb"/>
+            </StackPanel>
+            <Button x:Name="GoBtn" Content="Войти" Padding="15 10" Click="GoBtn_Click"/>
+        </StackPanel>
+    </RelativePanel>
+</Page>
